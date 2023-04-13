@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="DeveloperHub_TopBanner::menu"
+             title="Top Banner"
+             module="DeveloperHub_TopBanner"
+             sortOrder="10"
+             resource="DeveloperHub_TopBanner::configuration"
+             parent="DeveloperHub_Core::developerhub"
+        />
+        <add id="DeveloperHub_TopBanner::configuration"
+             title="Template Configurations"
+             module="DeveloperHub_TopBanner"
+             sortOrder="20"
+             resource="DeveloperHub_TopBanner::configuration"
+             parent="DeveloperHub_TopBanner::menu"
+             action="topbanner_templates/configuration/index"
+        />
+        <add
+            id="DeveloperHub_TopBanner::topconfiguration"
+            title="Top Banner Configurations"
+            translate="title"
+            module="DeveloperHub_TopBanner"
+            sortOrder="80"
+            resource="DeveloperHub_TopBanner::top_banner_management"
+            action="topbanner_templates/entity/index"
+            parent="DeveloperHub_TopBanner::menu"
+        />
+    </menu>
+</config>
