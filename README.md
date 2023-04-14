@@ -11,7 +11,7 @@
 
 1. Please run the following command
 ```shell
-composer require developerhub/top-banner
+composer require devhub/top-banner
 ```
 
 2. Update the composer if required
